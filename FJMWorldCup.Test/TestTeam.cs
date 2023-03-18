@@ -1,5 +1,3 @@
-using System.Reflection;
-
 namespace FJMWorldCup.Test;
 
 public class TestTeam
