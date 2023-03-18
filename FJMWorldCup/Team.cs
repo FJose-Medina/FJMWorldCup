@@ -7,6 +7,7 @@ public class Team
 
     public Team(string name)
     {
+        if(string.IsNullOrEmpty(name)) throw new ArgumentException("Team name cannot be null or empty");
         _name = name;
         _goalsScored = 0;
     }

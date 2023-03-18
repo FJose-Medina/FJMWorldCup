@@ -31,4 +31,13 @@ public class TestTeam
         // Assert
         Assert.Equal(expectedGoals, team.GoalsScored);
     }
+    [Fact] 
+    public void TestName()
+    {
+        // Arrange
+        string expectedName = "";
+
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => new Team(expectedName));
+    }
 }
