@@ -2,6 +2,7 @@
 
 public class TestMatch
 {
+    [Fact]
     public void TestConstructor()
     {
         // Arrange
