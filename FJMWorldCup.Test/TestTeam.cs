@@ -32,10 +32,19 @@ public class TestTeam
         Assert.Equal(expectedGoals, team.GoalsScored);
     }
     [Fact] 
-    public void TestName()
+    public void TestNameEmpty()
     {
         // Arrange
         string expectedName = "";
+
+        // Act & Assert
+        Assert.Throws<ArgumentException>(() => new Team(expectedName));
+    }
+    [Fact]
+    public void TestNameNull()
+    {
+        // Arrange
+        string expectedName = null;
 
         // Act & Assert
         Assert.Throws<ArgumentException>(() => new Team(expectedName));
