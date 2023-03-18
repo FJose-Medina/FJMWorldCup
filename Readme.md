@@ -3,7 +3,7 @@
 ## Project Description
 
 New Live
-Football World Cup Score Board
+Football World Cup Score Board, The project contains three classes: Team, Match, and ScoreBoard.
 
 ## Team
 Represents a football team and contains the team's name and the number of goals scored.
